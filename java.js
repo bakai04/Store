@@ -1,7 +1,6 @@
 let fon=document.querySelector(".fon");
 let a=0;
 let burger=document.querySelector(".burger");
-let line=document.querySelector(".line");
 let menu2=document.querySelector(".menu2");
 let img=document.querySelectorAll(".new-advice");
 let sliderline2=document.querySelector(".sliderline");
@@ -23,6 +22,8 @@ let spisok5=document.querySelector(".spisok-prev5");
 let spisok6=document.querySelector(".spisok-prev6");
 let width;
 let width2;
+fon.style.width=document.querySelector(".container").offsetWidth + "px";
+fon.style.height="auto";
 window.addEventListener("resize", function(){
     fon.style.width=document.querySelector(".container").offsetWidth + "px";
     fon.style.height="auto";
@@ -31,7 +32,6 @@ burger.addEventListener("click", function(){
     burger.classList.toggle("active");
     menu2.classList.toggle("active");
 })
-
 
 next.addEventListener("click", function(){
     a++;
