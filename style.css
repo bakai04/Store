@@ -29,6 +29,7 @@ body{
 }
 .header-menu{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-top: 23px;
     margin-bottom: 23px;
@@ -66,11 +67,11 @@ body{
 }
 .burger.active span:nth-of-type(2){
     top: 50%; 
-    transform: rotate(45deg);
+    transform: rotate(405deg);
 }
 .burger.active span:nth-of-type(3){
     top: 50%;
-    transform: rotate(-45deg);
+    transform: rotate(-405deg);
 }
 .menubtn{
     display: flex;
@@ -81,15 +82,15 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    width: 40%;
+    width: 60%;
     line-height: 35px;
-    height: 1200px;
+    height: 100%;
     transform: translate(300%);
     background-color: #ffffff;
     transition: all ease 0.5s;
 }
 .menu2.active{ 
-    transform: translate(150%);
+    transform: translate(90%);
 }
 .menu2 img{
     margin-left: 25px;
@@ -98,7 +99,7 @@ body{
     text-decoration: none;
     color: #000000;
     font-family: inherit;
-    font-size: 14px;
+    font-size: 20px;
     transition-duration: 0.5ms;
     font-weight: 600;
     margin-left: 25px;
@@ -302,11 +303,12 @@ input[type="search" i] {
     transition: all ease 0.5s;
 }
 .spisok-prev2.active, .spisok-prev3.active, .spisok-prev4.active, .spisok-prev5.active, .spisok-prev6.active{
-    height: 300px;
+    height: 400px;
 }
 .spisok-prev2 a, .spisok-prev3 a, .spisok-prev4 a, .spisok-prev5 a, .spisok-prev6 p{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 22px;
+    line-height: 20px;
     margin-left: 20px;
     color: #ffffff;
     font-family: inherit;
@@ -527,8 +529,8 @@ input[type="email" i] {
         display: block;
     }
     .menu2 a{
-        font-size: 20px;
-        line-height: 50px;
+        font-size: 30px;
+        line-height: 70px;
     }
     .header-menu{
         display: none;
@@ -598,7 +600,7 @@ input[type="email" i] {
     }
     .spisok p:first-of-type{
         color:rgba(255, 255, 255, 0.5);
-        font-size:20px;
+        font-size:25px;
         font-weight: bold;
     }
 }
