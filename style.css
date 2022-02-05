@@ -299,6 +299,8 @@ input[type="search" i] {
 }
 .spisok-prev2, .spisok-prev3, .spisok-prev4, .spisok-prev5, .spisok-prev6 {
     height: 60px;
+    display:flex;
+    flex-direction: column;
     overflow: hidden;
     transition: all ease 0.5s;
 }
@@ -308,7 +310,6 @@ input[type="search" i] {
 .spisok-prev2 a, .spisok-prev3 a, .spisok-prev4 a, .spisok-prev5 a, .spisok-prev6 p{
     text-decoration: none;
     font-size: 22px;
-    line-height: 20px;
     margin-left: 20px;
     color: #ffffff;
     font-family: inherit;
@@ -482,6 +483,10 @@ input[type="email" i] {
     border: 1px solid #ffffff;
     height: 50px;
     width: 390px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
 }
 .footer-inner{
     display: flex;
