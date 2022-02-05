@@ -46,8 +46,8 @@ body{
     position: relative;
 }
 .burger span{
-    width: 30px;
-    height: 3px;
+    width: 50px;
+    height: 5px;
     background-color: #ffffff;
     position: absolute;
     left: 50%;
@@ -55,10 +55,10 @@ body{
     transition: all ease 0.5s;
 }
 .burger span:nth-of-type(2){
-    top: calc(50% - 10px);
+    top: calc(50% - 17px);
 }
 .burger span:nth-of-type(3){
-    top: calc(50% + 10px);
+    top: calc(50% + 17px);
 }
 .burger.active span:first-of-type{
     transform: translateX(-100%);
@@ -83,7 +83,7 @@ body{
     left: 0;
     width: 40%;
     line-height: 35px;
-    height: 1000px;
+    height: 1200px;
     transform: translate(300%);
     background-color: #ffffff;
     transition: all ease 0.5s;
@@ -120,14 +120,15 @@ body{
     padding:15px 0 15px 0;
 }
 .search{
-    width: 60%;
-    height: 40px;
+    width: 50%;
+    height: 60px;
     border: 1px solid white;
     border-radius: 50px;
     justify-content: center;
 } 
 input[type="search" i] {
     padding: 1px 2px;
+    font-size: 18px;
     color: #666666;
     padding-left: 15px;
 }
@@ -188,7 +189,7 @@ input[type="search" i] {
     position: relative;
     left: 0;
 }
-.new-advice{
+.new-advice, .new-advice2{
     width: 234px;
 }
 .new-advicer{
@@ -296,7 +297,7 @@ input[type="search" i] {
     align-items: center;
 }
 .spisok-prev2, .spisok-prev3, .spisok-prev4, .spisok-prev5, .spisok-prev6 {
-    height: 40px;
+    height: 60px;
     overflow: hidden;
     transition: all ease 0.5s;
 }
@@ -305,7 +306,7 @@ input[type="search" i] {
 }
 .spisok-prev2 a, .spisok-prev3 a, .spisok-prev4 a, .spisok-prev5 a, .spisok-prev6 p{
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     margin-left: 20px;
     color: #ffffff;
     font-family: inherit;
@@ -471,6 +472,7 @@ input[type="search" i] {
 }
 input[type="email" i] {
     padding: 1px 2px;
+    padding-left: 15px;
     color: #ffffff;
 }
 .email{
@@ -483,7 +485,7 @@ input[type="email" i] {
     display: flex;
     justify-content: space-between;
 }
-.links p:first-of-type, .spisok p:first-of-type{
+.links p:first-of-type{
     color:rgba(255, 255, 255, 0.5);
     font-size:14px;
     font-weight: bold;
@@ -516,13 +518,17 @@ input[type="email" i] {
 }
 @media(max-width: 1250px){
     .container{
-        max-width: 90%;
+        max-width: 95%;
     }
     .menu{
         display: none;
     }
     .burger{
         display: block;
+    }
+    .menu2 a{
+        font-size: 20px;
+        line-height: 50px;
     }
     .header-menu{
         display: none;
@@ -539,15 +545,20 @@ input[type="email" i] {
     .custom-inner{
         display: none;
     }
+    .next,.prev,.next2,.prev2{
+        width: 45px;
+        width: 70px;
+    }
     .email{
         background-color: #020203;
         border: 1px solid #ffffff;
-        height: 38px;
-        width: 186px;
+        font-size: 18px;
+        height: 60px;
+        width: 300px;
     }
     .btn{
         font-family: inherit;   
-        font-size: 13px;
+        font-size: 20px;
         color: #ffffff;
         border: 2px solid #0156FF;
         background-color: #0156FF;
@@ -563,5 +574,60 @@ input[type="email" i] {
     }
     .subscribe{
         justify-content: center;
+    }
+    .lofo img{
+        width: 251px;
+        height: 200px;
+    }
+    .frame-inner{
+        width: 380px;
+    }
+    .frame-inner img{
+        width: 85px;
+        height: 86px;
+    }
+    .frame-inner p:first-of-type{
+        font-size: 25px;
+    }
+    .frame-inner p:last-of-type{
+        font-size: 18px;
+        width: 365px;
+    }
+    .subscribe p{
+        font-size: 45px;
+    }
+    .spisok p:first-of-type{
+        color:rgba(255, 255, 255, 0.5);
+        font-size:20px;
+        font-weight: bold;
+    }
+}
+@media(max-width: 1000px){
+    .txt1{
+        font-size: 25px;
+    }
+    .contact img{
+        width: 35px;
+        height: 35px;
+    }
+    .txt4{
+        text-transform:capitalize;
+    } 
+    .advice{
+        width: 300px;
+        height: 300px;
+    }
+    .new-advice,.new-advice2{
+        width: 334px;
+    }
+    .txt2{
+        font-size: 13px;
+    }
+    .txt3{
+
+        font-size: 14px;
+    }
+    .txt4{
+        font-size: 18px;
     }
 }

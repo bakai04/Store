@@ -1,7 +1,7 @@
 let fon=document.querySelector(".fon");
 let a=0;
+let b=0;
 let burger=document.querySelector(".burger");
-let line=document.querySelector(".line");
 let menu2=document.querySelector(".menu2");
 let img=document.querySelectorAll(".new-advice");
 let sliderline2=document.querySelector(".sliderline");
@@ -23,6 +23,8 @@ let spisok5=document.querySelector(".spisok-prev5");
 let spisok6=document.querySelector(".spisok-prev6");
 let width;
 let width2;
+fon.style.width=document.querySelector(".container").offsetWidth + "px";
+fon.style.height="auto";
 window.addEventListener("resize", function(){
     fon.style.width=document.querySelector(".container").offsetWidth + "px";
     fon.style.height="auto";
@@ -31,7 +33,6 @@ burger.addEventListener("click", function(){
     burger.classList.toggle("active");
     menu2.classList.toggle("active");
 })
-
 
 next.addEventListener("click", function(){
     a++;
@@ -50,20 +51,20 @@ prev.addEventListener("click", function(){
     sliderline.style.left= a*width + "px";
 })
 next2.addEventListener("click", function(){
-    a++;
-    if(a > img2.length){
-        a=0;
+    b++;
+    if(b > img2.length){
+        b=0;
     }
     width2=-img[1].offsetWidth;
-    sliderline2.style.left= a*width2 + "px";
+    sliderline2.style.left= b*width2 + "px";
 })
 prev2.addEventListener("click", function(){
-    a--;
+    b--;
     if(a < 0){
-        a=img2.length;
+        b=img2.length;
     }
     width2=-img[1].offsetWidth;
-    sliderline2.style.left= a*width2 + "px";
+    sliderline2.style.left= b*width2 + "px";
 })
 
 
