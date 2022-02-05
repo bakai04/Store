@@ -189,7 +189,7 @@ input[type="search" i] {
     position: relative;
     left: 0;
 }
-.new-advice{
+.new-advice, .new-advice2{
     width: 234px;
 }
 .new-advicer{
@@ -545,6 +545,10 @@ input[type="email" i] {
     .custom-inner{
         display: none;
     }
+    .next,.prev,.next2,.prev2{
+        width: 45px;
+        width: 70px;
+    }
     .email{
         background-color: #020203;
         border: 1px solid #ffffff;
@@ -613,7 +617,7 @@ input[type="email" i] {
         width: 300px;
         height: 300px;
     }
-    .new-advice{
+    .new-advice,.new-advice2{
         width: 334px;
     }
     .txt2{
